@@ -1,4 +1,4 @@
-"""AFK Plugin for IndianBot
+"""AFK Plugin for Phantom
 Syntax: .afk REASON"""
 import asyncio
 import datetime
@@ -24,14 +24,14 @@ async def set_not_afk(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PLUGIN_CHANNEL,  # pylint:disable=E0602
-                "Mine Owner has gone for some Important work he is very busy🥳🥳🥳"
+                "Mine Owner has gone for some Important work. He will be back soon..."
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             await borg.send_message(  # pylint:disable=E0602
                 event.chat_id,
                 "Please set `PLUGIN_CHANNEL` " + \
                 "for the proper functioning of afk functionality " + \
-                "in @IndianArMyGiveaway\n\n `{}`".format(str(e)),
+                "in @PhantomBots\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True
             )
@@ -63,7 +63,7 @@ async def _(event):
         if reason:
             await event.edit(f"Mera Malik Ja Raha Hai, and Reason is {reason}")
         else:
-            await event.edit(f"Mera Malik Ja Raha Hai")
+            await event.edit(f"Gone offline For Few Hours.")
         await asyncio.sleep(5)
         await event.delete()
         try:
@@ -121,7 +121,7 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"My Master Has Been Gone For {afk_since}\nWhere He Is: Tereko kyu batau " + \
+        message_to_reply = f"My Master Has Been Gone For {afk_since}\nWhere He Is: Only God Knows" + \
             f"\n\n__ I'll back in a few hours__\n**REASON**: {reason}" \
             if reason \
             else f"**Important Notice**\n\n[This User Is Ded Forever...](https://telegra.ph//file/a53fa950ff31781d5930a.jpg) "
