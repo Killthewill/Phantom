@@ -56,12 +56,12 @@ async def _(event):
         packname = f"IndianBhaikeStickers"
         packshortname = "IndianBhai_ke_locker_me"
     else:
-        packname = f"{user.first_name}'s IndianBot Vol.{pack}"
-        packshortname = f"IndianBot_{userid}_kang"
+        packname = f"{user.first_name}'s Phantom Vol.{pack}"
+        packshortname = f"Phantom_{userid}_kang"
     await event.edit("`Look dat way,it's a gurl!\nMeanwhile, lemme kang this stcker over hehe ヽ༼ ಠ益ಠ ༽ﾉ`")
 
     is_a_s = is_it_animated_sticker(reply_message)
-    file_ext_ns_ion = "@IndianArMyGiveaway.png"
+    file_ext_ns_ion = "@IndianBot_Official.png"
     file = await borg.download_file(reply_message.media)
     uploaded_sticker = None
     if is_a_s:
@@ -71,8 +71,8 @@ async def _(event):
             packname = f"IndiaBhaikeAnimeted"
             packshortname = "IndianBhai_ke_Animated"
         else:
-            packname = f"{user.first_name}'s IndianBot Animated Vol.{pack}"
-            packshortname = f"IndianBot_{userid}" # format: Uni_Borg_userid
+            packname = f"{user.first_name}'s Phantom Animated Vol.{pack}"
+            packshortname = f"Phantom_{userid}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
         return
