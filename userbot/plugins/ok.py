@@ -2,7 +2,7 @@
 
 Available Commands:
 
-.ok"""
+.phantom"""
 
 from telethon import events
 
@@ -10,34 +10,26 @@ import asyncio
 
 from userbot.utils import admin_cmd
 
-@borg.on(admin_cmd("ok"))
+@borg.on(admin_cmd("phantom"))
 async def _(event):
     if event.fwd_from:
         return
     animation_interval = 0.1
     animation_ttl = range(0,36)
     #input_str = event.pattern_match.group(1)
-   # if input_str == "ok":
-    await event.edit("ok")
+   # if input_str == "phantom":
+    await event.edit("phantom")
     animation_chars = [
-            "F",
-            "U",
-            "C",
-            "K",
-            "Y",
-            "O",
-            "U",
-            "B",
-            "C",
-            "FK",
-            "UU",
-            "FCUK",
-            "UOY",
-            "C",
-            "F",
-            "Y",
-            "F",
-            "Ok Sar 😇"
+            "Phantom",
+            "pHantom",
+            "phAntom",
+           "phaNtom",
+            "phanTom",
+            "phantOm",
+            "phantoM",
+            "PhAnToM",
+            "PHANTOM",
+            "@PhantomBots"
         ]
 
     for i in animation_ttl:
