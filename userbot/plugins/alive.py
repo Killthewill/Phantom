@@ -17,7 +17,7 @@ async def amireallyalive(alive):
                      f"`🦹🏼My peru owner`: {DEFAULTUSER}\n\n"
                      "`Telethon version:` **6.0.9**\n`Python:` **3.7.4**\n"
                      "`Database Status:` **Connected... **\n\n`Always with you, my master!\n`"
-                     "**Bot Creator:** [Levin](t.me/pureindialover)\n [Lord](t.me/lord_burner)\n\n"
+                     "**Bot Creator:** [Levin](t.me/levingod) / [Lord](t.me/lord_burner)\n\n"
                      
                      "     [Deploy This Phantom](https://github.com/levingod/Phantom)") 
 
